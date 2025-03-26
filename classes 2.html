@@ -1,0 +1,32 @@
+<html>
+    <body>
+        <h1>Javascript Class Inheritance</h1>
+        <p>Use the "extends" Keyword to inherit all methods from another class.</p>
+        <p>Use the "super" method to cell the parent's constructor function.</p>
+        <p id="details"></p>
+        <script>
+            class car {
+                constructor(Brand){
+                    this.carname = Brand;
+                }
+                present() {
+                    return 'I have a ' + this.carcarname;
+                }
+            }
+            class Model extends Car {
+                constructor(Brand, mod) {
+                    super(Brand);
+                    this.model = mod;
+                }
+                show() {
+                    return this.present() + ', it is a ' + this.model;
+                }
+            }
+            let myCar = new Model("Ford", "Mustang");
+            document.getElementById("details").innerHTML = myCar. show();
+        </script>
+        
+
+
+    </body>
+</html>
